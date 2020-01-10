@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,500i,700,700i&display=swap");
+
+@font-face {
+  font-family: "Title font";
+  src: url("../assets/font/pixel.TTF");
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+.victory_screen {
+  background-image: url("../assets/Victory_background_1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+
+.container--endGame {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container--endGame--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .container--endGame--gameoverWindow {
+    width: 60%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    animation: slidein 2s;
+    position: relative;
+
+    @keyframes slidein {
+      from {
+        margin-bottom: 25%;
+        opacity: 0;
+      }
+
+      to {
+        margin-bottom: 0%;
+        opacity: 1;
+      }
+    }
+  }
+
+  .container--endGame-closeButton {
+    width: 30px;
+    height: 24px;
+    background-color: red;
+    border-radius: 100%;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 10;
+    right: 10;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    font-size: 22px;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-top: 0.8%;
+  }
+
+  .container--endGame--gameoverTitle {
+    color: white;
+    font-family: "Title font", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 6%;
+    margin-bottom: 1%;
+  }
+
+  .container--endGame--gameoverSubTitle {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .container--endGame--gameoverButton {
+    border-radius: 15px;
+  }
+
+  .container--endGame--gameoverReplay {
+    width: 20%;
+    height: 40%;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    font-family: "Title font", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.3%;
+    color: red;
+  }
+}

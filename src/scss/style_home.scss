@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,500i,700,700i&display=swap");
+
+@font-face {
+  font-family: "Title font";
+  src: url("../assets/font/pixel.TTF");
+}
+
+@font-face {
+  font-family: "Space";
+  src: url("../assets/font/BigSpace-rPKx.ttf");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: url("../assets/background-image3a.png") no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerHomepage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerHomepage--topFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15%;
+
+  .containerHomepage--topFlex--title {
+    font-family: "Title font", sans-serif;
+    color: white;
+    font-size: 60px;
+  }
+}
+
+.containerHomepage--middleFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 53%;
+}
+
+.gif-perso-run {
+  width: 100px;
+}
+
+.containerHomepage--middleFlex--rules {
+  width: 28%;
+  height: 85%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 12px 1px rgb(255, 255, 255);
+
+  .containerHomepage--middleFlex--rules--title {
+    font-weight: 500;
+    font-family: "Title font", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .containerHomepage--middleFlex--rules--text {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 7%;
+    line-height: 26px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .containerHomepage--middleFlex--rules--text__endline {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 1%;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(243, 90, 43);
+  }
+}
+
+.containerHomepage--middleFlex--howToPlay {
+  width: 28%;
+  height: 85%;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 12px 1px rgb(255, 255, 255);
+
+  .containerHomepage--middleFlex--howToPlay--title {
+    font-weight: 500;
+    font-family: "Title font", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .containerHomepage--middleFlex--howToPlay_flex_img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .key-text-command-right {
+    width: 20%;
+    padding-top: 3%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+  }
+
+  .key-text-command-left {
+    width: 17%;
+    padding-top: 3%;
+    padding-left: 3%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+  }
+
+  .key-text-command-up {
+    width: 10%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 7%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+  }
+
+  .containerHomepage--middleFlex--howToPlay--text {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 7%;
+    line-height: 26px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .containerHomepage--middleFlex--howToPlay__arrowRight {
+    width: 30px;
+  }
+}
+
+.containerHomepage--bottomFlex {
+  width: 100vw;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .containerHomepage--bottomFlex-enterButton {
+    width: 20%;
+    height: 40%;
+    background-color: #ff0000;
+    border-radius: 20px;
+    font-family: "Title font", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 1.3%;
+    color: rgb(255, 255, 255);
+    transition: ease 0.3s;
+    box-shadow: 0px 2px 1px #950808 inset, 0px 2px 8px #503838,
+      0px 2px 1px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .containerHomepage--bottomFlex-enterButton:hover {
+    transform: scale(1.05);
+  }
+}
+
+.containerHomepage--creditFlex {
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+  align-items: center;
+
+  .containerHomepage--creditFlex-text {
+    margin-right: 2%;
+    margin-top: 1%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+
+  .containerHomepage--creditFlex-text a {
+    color: white;
+  }
+
+  .containerHomepage--creditFlex-bgsound {
+    outline: none;
+  }
+}
+
+audio {
+  outline: none;
+}
