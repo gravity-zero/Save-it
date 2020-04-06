@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "<h1> GROUPE 9 ICO </h1>",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html src/screens/*.html && cp -R src/assets/ dist",
@@ -13,5 +13,14 @@
   "devDependencies": {
     "node-sass": "^4.13.0",
     "parcel-bundler": "^1.12.4"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gravity-zero/Save-it.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gravity-zero/Save-it/issues"
+  },
+  "homepage": "https://github.com/gravity-zero/Save-it#readme"
 }
